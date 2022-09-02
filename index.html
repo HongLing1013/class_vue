@@ -1,6 +1,15 @@
-<script src="https://unpkg.com/vue@3"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://unpkg.com/vue@3"></script>
 
-<div id="app">{{ message }}</div>
+<div id="app">{{ name }}{{ message }}{{ num }} {{ sum }}</div>
 
 <script>
   const { createApp } = Vue
@@ -8,8 +17,13 @@
   createApp({
     data() {
       return {
-        message: '萬歲筆試過關'
+        message: '筆試及格',
+        name : 'Hollie Chao',
+        num : '77分',
+        sum : 3+5
       }
     }
   }).mount('#app')
 </script>
+</body>
+</html>
